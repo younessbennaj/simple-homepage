@@ -1,0 +1,156 @@
+:root {
+  --blue: #2a4dd0;
+  --white: #ffffff;
+  --light-blue: #f2f9fe;
+  --dark: #111729;
+  --grey: #223344;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--light-blue);
+  font-size: 16px;
+  color: var(--dark);
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  padding: 24px;
+
+  img {
+    width: 100px;
+  }
+}
+
+section {
+  min-height: 100vh;
+}
+
+.image {
+  margin-top: 36px;
+  margin-bottom: 96px;
+  padding: 0 8px;
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 640px) {
+    img {
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.content {
+  padding: 0px 36px;
+
+  @media screen and (min-width: 640px) {
+    padding: 0px 114px;
+  }
+}
+
+.subtitle {
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+
+  span {
+    margin-right: 4px;
+  }
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: var(--grey);
+  width: 80%;
+
+  @media screen and (min-width: 640px) {
+    font-size: 64px;
+  }
+}
+
+.paragraph {
+  margin-bottom: 40px;
+  color: var(--grey);
+  font-size: 12px;
+}
+
+.list {
+  display: flex;
+  column-gap: 20px;
+}
+
+.list-items {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+
+  span {
+    font-size: 10px;
+  }
+
+  img {
+    width: 18px;
+  }
+}
+
+.button-group {
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.primary-button {
+  display: block;
+  background-color: var(--blue);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.inline-button {
+  color: var(--blue);
+  display: block;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  padding: 0;
+  height: fit-content;
+  border-bottom: 2px solid var(--blue);
+}
