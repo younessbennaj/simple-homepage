@@ -32,13 +32,23 @@ ul {
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 24px;
+}
+.nav .menu-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 640px) {
   .nav {
     padding: 32px;
   }
-  .nav img {
+  .nav .logo {
     width: 150px;
   }
 }
@@ -46,53 +56,24 @@ ul {
   .nav {
     padding: 28px 72px;
   }
-  .nav img {
+  .nav .logo {
     height: initial;
     width: initial;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  section {
+  #homepage {
     padding: 0px 72px;
   }
 }
 @media screen and (min-width: 1025px) {
-  section {
+  #homepage {
     padding-top: 64px;
   }
 }
 
-.image {
-  margin-top: 36px;
-  margin-bottom: 96px;
-  padding: 0 8px;
-}
-.image img {
-  width: 100%;
-}
-@media screen and (min-width: 640px) {
-  .image {
-    padding: 0px;
-  }
-  .image img {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .image {
-    margin: 0;
-    flex: calc(50% - 32px);
-  }
-  .image img {
-    width: 100%;
-  }
-}
-
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -105,33 +86,46 @@ ul {
   }
 }
 
-.content {
+.image-container {
+  margin-top: 36px;
+  margin-bottom: 96px;
+  padding: 0 8px;
+}
+.image-container img {
+  width: 100%;
+}
+@media screen and (min-width: 640px) {
+  .image-container {
+    padding: 0px;
+  }
+  .image-container img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .image-container {
+    margin: 0;
+    flex: calc(50% - 32px);
+  }
+  .image-container img {
+    width: 100%;
+  }
+}
+
+.text-container {
   padding: 0px 36px;
 }
 @media screen and (min-width: 640px) {
-  .content {
+  .text-container {
     padding: 0px 120px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .content {
+  .text-container {
     padding: 0px;
     flex: calc(50% - 32px);
-  }
-}
-
-.subtitle {
-  font-size: 10px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-}
-.subtitle span {
-  margin-right: 4px;
-}
-@media screen and (min-width: 640px) {
-  .subtitle {
-    font-size: 14px;
   }
 }
 
@@ -150,6 +144,21 @@ ul {
   .title {
     font-size: 60px;
     margin-bottom: 32px;
+  }
+}
+
+.subtitle {
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.subtitle span {
+  margin-right: 4px;
+}
+@media screen and (min-width: 640px) {
+  .subtitle {
+    font-size: 14px;
   }
 }
 

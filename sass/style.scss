@@ -31,13 +31,26 @@ ul {
   list-style: none;
 }
 
+// NAVIGATION
+
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 24px;
+
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   @media screen and (min-width: 640px) {
     padding: 32px;
 
-    img {
+    .logo {
       width: 150px;
     }
   }
@@ -45,14 +58,16 @@ ul {
   @media screen and (min-width: 1025px) {
     padding: 28px 72px;
 
-    img {
+    .logo {
       height: initial;
       width: initial;
     }
   }
 }
 
-section {
+// LAYOUT
+
+#homepage {
   @media screen and (min-width: 1025px) {
     padding: 0px 72px;
   }
@@ -62,7 +77,19 @@ section {
   }
 }
 
-.image {
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1025px) {
+    flex-direction: row-reverse;
+    column-gap: 32px;
+  }
+}
+
+.image-container {
   margin-top: 36px;
   margin-bottom: 96px;
   padding: 0 8px;
@@ -89,20 +116,7 @@ section {
   }
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1025px) {
-    flex-direction: row-reverse;
-    column-gap: 32px;
-  }
-}
-
-.content {
+.text-container {
   padding: 0px 36px;
 
   @media screen and (min-width: 640px) {
@@ -112,6 +126,24 @@ section {
   @media screen and (min-width: 1025px) {
     padding: 0px;
     flex: calc(50% - 32px);
+  }
+}
+
+// TYPOGRAPHY
+
+.title {
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: var(--grey);
+  width: 80%;
+
+  @media screen and (min-width: 640px) {
+    font-size: 52px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -130,22 +162,6 @@ section {
   }
 }
 
-.title {
-  font-size: 42px;
-  margin-bottom: 24px;
-  color: var(--grey);
-  width: 80%;
-
-  @media screen and (min-width: 640px) {
-    font-size: 52px;
-  }
-
-  @media screen and (min-width: 1025px) {
-    font-size: 60px;
-    margin-bottom: 32px;
-  }
-}
-
 .paragraph {
   margin-bottom: 40px;
   color: var(--grey);
@@ -161,6 +177,8 @@ section {
     margin-bottom: 22px;
   }
 }
+
+// LIST
 
 .list {
   display: flex;
@@ -188,6 +206,8 @@ section {
     width: 18px;
   }
 }
+
+// BUTTONS
 
 .button-group {
   display: flex;
