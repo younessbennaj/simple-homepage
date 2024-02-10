@@ -33,9 +33,23 @@ ul {
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 24px;
+  justify-content: space-between;
+}
+.nav .nav-left {
+  display: flex;
+  align-items: center;
+  flex: initial;
+}
+.nav .nav-center {
+  display: none;
+}
+.nav .nav-right {
+  display: none;
+}
+.nav .logo {
+  width: 110px;
 }
 @media screen and (min-width: 640px) {
   .nav {
@@ -45,18 +59,55 @@ ul {
     width: 150px;
   }
 }
+@media screen and (min-width: 750px) {
+  .nav {
+    justify-content: start;
+  }
+  .nav .nav-left {
+    display: flex;
+    justify-content: start;
+    flex: 25%;
+  }
+  .nav .nav-center {
+    display: flex;
+    justify-content: center;
+    flex: 50%;
+  }
+  .nav .nav-right {
+    display: flex;
+    justify-content: end;
+    flex: 25%;
+  }
+  .nav .nav-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+  }
+  .nav .nav-item {
+    font-size: 12px;
+  }
+  .nav .logo {
+    width: 110px;
+  }
+  .nav .menu-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav .nav-item {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .nav {
     padding: 28px 72px;
   }
+  .nav .nav-item {
+    font-size: 16px;
+  }
   .nav .logo {
     height: initial;
     width: initial;
-  }
-}
-@media screen and (min-width: 750px) {
-  .nav .icon-button {
-    display: none;
   }
 }
 
