@@ -42,6 +42,9 @@ ul {
   align-items: center;
   flex: initial;
 }
+.nav .nav-item-active {
+  font-weight: 500;
+}
 .nav .nav-center {
   display: none;
 }
@@ -50,6 +53,66 @@ ul {
 }
 .nav .logo {
   width: 110px;
+}
+.nav .switch {
+  display: flex;
+  flex-direction: row;
+  height: 26px;
+  border: none;
+  align-items: center;
+  padding: 0;
+  column-gap: 4px;
+  border: 2px solid #223344;
+  background-color: #223344;
+  border-radius: 13px;
+  cursor: pointer;
+}
+.nav .switch .switch-icon-dark-off {
+  display: inline;
+}
+.nav .switch .switch-icon-dark-on {
+  display: none;
+}
+.nav .switch .switch-icon-light-off {
+  display: none;
+}
+.nav .switch .switch-icon-light-on {
+  display: inline;
+}
+.nav .switch.active .switch-icon-dark-off {
+  display: none;
+}
+.nav .switch.active .switch-icon-dark-on {
+  display: inline;
+}
+.nav .switch.active .switch-icon-light-off {
+  display: inline;
+}
+.nav .switch.active .switch-icon-light-on {
+  display: none;
+}
+.nav .switch.active .switch-button-dark {
+  background-color: #f2f9fe;
+}
+.nav .switch.active .switch-button-light {
+  background-color: #223344;
+}
+.nav .switch .switch-button {
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .switch .switch-button img {
+  height: 100%;
+  transform: scale(0.8);
+}
+.nav .switch .switch-button-dark {
+  background-color: #223344;
+}
+.nav .switch .switch-button-light {
+  background-color: #f2f9fe;
 }
 @media screen and (min-width: 640px) {
   .nav {

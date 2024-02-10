@@ -22,6 +22,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <script defer src="javascript/index.js"></script>
     <title>Document</title>
   </head>
@@ -32,17 +36,49 @@
       </div>
       <div class="nav-center">
         <ul class="nav-list">
-          <li class="nav-item">About us</li>
+          <li class="nav-item nav-item-active">About us</li>
           <li class="nav-item">Product</li>
           <li class="nav-item">Resource</li>
           <li class="nav-item">Contact</li>
         </ul>
       </div>
       <div class="nav-right">
-        <button class="icon-button switch-button">
-          <span class="material-symbols-outlined"> toggle_off </span>
+        <!-- <button id="switch" class="icon-button switch-button active">
+          <span class="material-symbols-outlined toggle-off"> toggle_off </span>
+          <span class="material-symbols-outlined toggle-on"> toggle_on </span>
+        </button> -->
+        <button id="switch" class="switch">
+          <div class="switch-button switch-button-dark">
+            <img
+              class="switch-icon-dark-off"
+              src="images/Moon_fill_light.svg"
+              alt=""
+            />
+            <img
+              class="switch-icon-dark-on"
+              src="images/Moon_fill.svg"
+              alt=""
+            />
+          </div>
+          <div class="switch-button switch-button-light">
+            <img
+              class="switch-icon-light-on"
+              src="images/Sun_fill.svg"
+              alt=""
+            />
+            <img
+              class="switch-icon-light-off"
+              src="images/Sun_fill_light.svg"
+              alt=""
+            />
+          </div>
         </button>
       </div>
+      <img
+        class="switch-icon-light-off"
+        src="images/Sun_fill_light.svg"
+        alt=""
+      />
       <button id="menu" class="icon-button menu-button">
         <span class="material-symbols-outlined"> menu </span>
       </button>
