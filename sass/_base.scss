@@ -1,0 +1,39 @@
+:root,
+html[data-theme="light"] {
+  --background-color: #{map.get($light, background-color)};
+  --text-color: #{map.get($light, text-color)};
+  --paragraph-color: #{map.get($light, paragraph-color)};
+  --nav-item-color: #{map.get($light, nav-item-color)};
+  --nav-item-active-color: #{map.get($light, nav-item-active-color)};
+
+  .logo-dark {
+    display: inline;
+  }
+
+  .logo-light {
+    display: none;
+  }
+}
+
+html[data-theme="dark"] {
+  --background-color: #{map.get($dark, background-color)};
+  --text-color: #{map.get($dark, text-color)};
+  --paragraph-color: #{map.get($dark, paragraph-color)};
+  --nav-item-color: #{map.get($dark, nav-item-color)};
+  --nav-item-active-color: #{map.get($dark, nav-item-active-color)};
+
+  .logo-dark {
+    display: none;
+  }
+
+  .logo-light {
+    display: inline;
+  }
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,38 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 100%;
+  width: 70%;
+  background-color: $white;
+  box-sizing: border-box;
+  padding: 24px;
+  row-gap: 24px;
+  transition: transform 0.9s ease;
+
+  &.open {
+    transform: translateX(-100%);
+  }
+
+  .close-button {
+    align-self: flex-end;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .sidebar-item {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  @media screen and (min-width: 750px) {
+    display: none;
+  }
+}

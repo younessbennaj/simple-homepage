@@ -1,0 +1,22 @@
+$blue: #2a4dd0;
+$white: #ffffff;
+$light-blue: #f2f9fe;
+$dark: #111729;
+$grey: #223344;
+$light-grey: #909193;
+
+// Themes
+$light: (
+  background-color: $light-blue,
+  text-color: $dark,
+  paragraph-color: $grey,
+  nav-item-color: $dark,
+  nav-item-active-color: $dark,
+);
+$dark: (
+  background-color: $dark,
+  text-color: $white,
+  paragraph-color: $light-grey,
+  nav-item-color: $light-grey,
+  nav-item-active-color: $white,
+);

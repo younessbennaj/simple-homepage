@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,10 +29,19 @@
     <script defer src="javascript/index.js"></script>
     <title>Document</title>
   </head>
-  <body>
+  <body id="body">
     <nav class="nav">
       <div class="nav-left">
-        <img class="logo" src="images/alarado-icon-homepage.svg" alt="" />
+        <img
+          class="logo logo-dark"
+          src="images/alarado-icon-homepage.svg"
+          alt=""
+        />
+        <img
+          class="logo logo-light"
+          src="images/alarado-icon-homepage-light.svg"
+          alt=""
+        />
       </div>
       <div class="nav-center">
         <ul class="nav-list">
@@ -43,10 +52,6 @@
         </ul>
       </div>
       <div class="nav-right">
-        <!-- <button id="switch" class="icon-button switch-button active">
-          <span class="material-symbols-outlined toggle-off"> toggle_off </span>
-          <span class="material-symbols-outlined toggle-on"> toggle_on </span>
-        </button> -->
         <button id="switch" class="switch">
           <div class="switch-button switch-button-dark">
             <img
@@ -74,11 +79,6 @@
           </div>
         </button>
       </div>
-      <img
-        class="switch-icon-light-off"
-        src="images/Sun_fill_light.svg"
-        alt=""
-      />
       <button id="menu" class="icon-button menu-button">
         <span class="material-symbols-outlined"> menu </span>
       </button>
@@ -93,6 +93,24 @@
         <li class="sidebar-item">Resource</li>
         <li class="sidebar-item">Contact</li>
       </ul>
+      <button id="switch-mobile" class="switch" style="align-self: center">
+        <div class="switch-button switch-button-dark">
+          <img
+            class="switch-icon-dark-off"
+            src="images/Moon_fill_light.svg"
+            alt=""
+          />
+          <img class="switch-icon-dark-on" src="images/Moon_fill.svg" alt="" />
+        </div>
+        <div class="switch-button switch-button-light">
+          <img class="switch-icon-light-on" src="images/Sun_fill.svg" alt="" />
+          <img
+            class="switch-icon-light-off"
+            src="images/Sun_fill_light.svg"
+            alt=""
+          />
+        </div>
+      </button>
     </div>
     <section id="homepage">
       <div class="container">
