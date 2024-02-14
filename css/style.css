@@ -15,6 +15,7 @@ ul {
 
 :root,
 html[data-theme=light] {
+  --title-color: #223344;
   --background-color: #f2f9fe;
   --text-color: #111729;
   --paragraph-color: #223344;
@@ -31,6 +32,7 @@ html[data-theme=light] .logo-light {
 }
 
 html[data-theme=dark] {
+  --title-color: #ffffff;
   --background-color: #111729;
   --text-color: #ffffff;
   --paragraph-color: #909193;
@@ -198,7 +200,7 @@ body {
     padding: 28px 72px;
   }
   .nav .nav-item {
-    font-size: 16px;
+    font-size: 14px;
   }
   .nav .logo {
     height: initial;
@@ -292,6 +294,7 @@ body {
   }
   .image-container img {
     width: 100%;
+    transform: translateY(24px);
   }
 }
 
@@ -324,6 +327,7 @@ body {
 @media screen and (min-width: 1025px) {
   .title {
     font-size: 60px;
+    line-height: 90px;
     margin-bottom: 32px;
   }
 }
@@ -403,7 +407,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 }
 @media screen and (min-width: 640px) {
@@ -417,7 +421,7 @@ body {
 .inline-button {
   color: #2a4dd0;
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   background-color: transparent;
   border: none;
   font-size: 12px;

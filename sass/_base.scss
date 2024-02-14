@@ -1,5 +1,6 @@
 :root,
 html[data-theme="light"] {
+  --title-color: #{map.get($light, title-color)};
   --background-color: #{map.get($light, background-color)};
   --text-color: #{map.get($light, text-color)};
   --paragraph-color: #{map.get($light, paragraph-color)};
@@ -16,6 +17,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
+  --title-color: #{map.get($dark, title-color)};
   --background-color: #{map.get($dark, background-color)};
   --text-color: #{map.get($dark, text-color)};
   --paragraph-color: #{map.get($dark, paragraph-color)};

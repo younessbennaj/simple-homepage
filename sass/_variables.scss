@@ -7,6 +7,7 @@ $dark: #111729;
 
 // Themes
 $light: (
+  title-color: $grey,
   background-color: $light-blue,
   text-color: $dark,
   paragraph-color: $grey,
@@ -14,6 +15,7 @@ $light: (
   nav-item-active-color: $dark,
 );
 $dark: (
+  title-color: $white,
   background-color: $dark,
   text-color: $white,
   paragraph-color: $light-grey,
