@@ -28,6 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   switchMobile.addEventListener("click", () => {
     switchMobile.classList.toggle("active");
-    // bodyElement.classList.toggle("dark");
+
+    const dataTheme = document.documentElement.getAttribute("data-theme");
+
+    if (dataTheme === "light") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
   });
 });
