@@ -54,6 +54,7 @@ body {
 }
 
 .switch {
+  margin-left: auto;
   display: flex;
   flex-direction: row;
   height: 26px;
@@ -171,7 +172,6 @@ body {
   }
   .nav .nav-right {
     display: flex;
-    justify-content: end;
     flex: 25%;
   }
   .nav .nav-list {
